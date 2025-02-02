@@ -1,0 +1,51 @@
+body {
+    font-family: Consolas, monospace;
+    background: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+	user-select: none;
+}
+
+p {
+    font-size: 1.2em;
+    color: #bbb;
+	user-select: none;
+}
+
+/* Grid layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Project Cards */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #222;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    user-select: none;  /* Prevents caret when clicking text */
+    cursor: pointer;     /* Ensures it looks clickable */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: #333;
+}
