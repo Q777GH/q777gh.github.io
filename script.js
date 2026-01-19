@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (savedTheme) {
         body.classList.remove("modern-theme", "windows95-theme");
         body.classList.add(savedTheme);
-        themeToggle.textContent = savedTheme === "modern-theme" ? "Switch to Windows 95" : "Switch to Modern";
+        themeToggle.textContent = savedTheme === "windows95-theme" ? "Switch to Modern" : "Switch to Windows 95";
     } else {
         body.classList.add("modern-theme"); // Default if nothing is saved
     }
@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
